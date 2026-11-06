@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#10121b">
+<title>Vesper — O Último Farol</title>
+<style>
+:root{color-scheme:dark;--ink:#f4efe6;--muted:#a9a8b8;--gold:#e5bc78;--violet:#a79bdf}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#10121b;color:var(--ink);font-family:ui-serif,Georgia,serif}body{display:grid;place-items:center;min-height:100svh;padding:clamp(10px,2.4vw,28px);background:radial-gradient(ellipse at 50% 0%,#28273b 0,#171925 46%,#10121b 100%);overflow-x:hidden}.game-shell{width:min(1120px,100%);display:flex;flex-direction:column;gap:12px}.topline{display:flex;align-items:end;justify-content:space-between;padding:0 3px}.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:37px;height:37px;border:1px solid #8277a6;border-radius:50%;display:grid;place-items:center;color:#e3c18c;font-size:19px;box-shadow:0 0 22px #a48bc61e}.brand h1{font-size:16px;letter-spacing:.2em;text-transform:uppercase;margin:0;font-weight:500}.brand small{display:block;color:#a6a4b4;font:9px/1.5 system-ui;letter-spacing:.18em;text-transform:uppercase}.chapter{color:#c3b9ab;font:10px system-ui;letter-spacing:.16em;text-transform:uppercase}.screen{position:relative;width:100%;aspect-ratio:16/9;border:1px solid #786c83;border-radius:8px;overflow:hidden;background:#171928;box-shadow:0 20px 70px #0008,0 0 0 5px #fff04}.screen canvas{display:block;width:100%;height:100%;touch-action:none}.screen:after{content:"";position:absolute;inset:0;pointer-events:none;border:1px solid #ffffff0c;border-radius:8px}.below{display:flex;justify-content:space-between;align-items:center;color:#a7a5b2;font:11px/1.45 system-ui}.below b{color:#ded1bb;font-weight:500}.legend{display:flex;gap:18px}.legend span{white-space:nowrap}.key{display:inline-grid;place-items:center;min-width:20px;height:20px;padding:0 5px;border:1px solid #5b596c;border-radius:4px;color:#e8ddcb;font:10px system-ui;margin-right:4px}.mobile-controls{display:none;align-items:center;justify-content:space-between;gap:14px;touch-action:none;user-select:none}.pad{display:flex;gap:10px}.control{width:60px;height:56px;border:1px solid #716781;border-radius:15px;background:linear-gradient(145deg,#28283a,#1b1d2b);color:#e5d7c2;box-shadow:inset 0 1px #ffffff12,0 5px 12px #0005;font:20px system-ui;touch-action:none}.control.action{border-color:#9c806b;color:#f1c894}.control:active,.control.pressed{background:#54445b;transform:translateY(1px)}.footer{display:flex;justify-content:space-between;color:#747483;font:9px system-ui;letter-spacing:.1em;text-transform:uppercase}.footer span:last-child{color:#9e8e78}
+@media(max-width:700px){body{padding:10px 10px max(10px,env(safe-area-inset-bottom))}.game-shell{gap:9px}.topline{align-items:center}.brand h1{font-size:13px}.brand-mark{width:32px;height:32px}.chapter{font-size:8px}.screen{border-radius:5px}.below{font-size:10px}.legend{display:none}.mobile-controls{display:flex;padding:2px 6px 0}.control{width:min(17vw,65px);height:min(14vw,58px)}.footer{font-size:8px}}
+@media(max-height:500px) and (orientation:landscape){body{padding:4px 12px}.game-shell{width:min(1120px,100%);gap:5px}.topline{display:none}.screen{max-height:calc(100svh - 92px);width:auto;align-self:center}.below{display:none}.mobile-controls{position:fixed;inset:auto 16px 8px;z-index:3;pointer-events:none}.mobile-controls>*{pointer-events:auto}.control{width:54px;height:48px}.footer{display:none}}
+</style>
+</head>
+<body>
+<main class="game-shell">
+  <header class="topline"><div class="brand"><div class="brand-mark">✦</div><div><h1>Vesper</h1><small>O último farol</small></div></div><div class="chapter">Capítulo I &nbsp;·&nbsp; Vale das cinzas</div></header>
+  <div class="screen"><canvas id="game" width="960" height="540" aria-label="Jogo Vesper: explore o vale e encontre o farol"></canvas></div>
+  <div class="below"><div><b>Encontre as 8 centelhas</b> para despertar o farol.</div><div class="legend"><span><i class="key">A</i><i class="key">D</i> mover</span><span><i class="key">Espaço</i> saltar</span><span><i class="key">J</i> golpe</span></div></div>
+  <div class="mobile-controls" aria-label="Controles do jogo"><div class="pad"><button class="control" data-key="left" aria-label="Mover para a esquerda">‹</button><button class="control" data-key="right" aria-label="Mover para a direita">›</button></div><div class="pad"><button class="control action" data-key="attack" aria-label="Atacar">✦</button><button class="control action" data-key="jump" aria-label="Pular">↑</button></div></div>
+  <footer class="footer"><span>Uma aventura de luz e silêncio</span><span>✦ &nbsp; checkpoint ao longo do caminho</span></footer>
+</main>
+<script>
+/* GAME_SCRIPT */
+</script>
+</body>
+</html>
